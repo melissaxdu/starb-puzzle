@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Star Battle</title>
+
+    <style>
+        #canvas {
+            border: 1px solid black;
+            margin: 20px;
+            height: 512px;
+            width: 512px;
+        }
+        /* #outputArea {
+            border: 1px solid lightgray;
+            margin: 20px;
+            height: 256px;
+            width: 512px;
+            overflow: scroll;
+            padding: 5px;
+            white-space: pre-wrap;
+        } */
+        #button {
+            background-color: white; 
+            color: black; 
+            border: 2px solid #ff6fde;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            margin: 4px 2px;
+            transition-duration: 0.4s;
+            cursor: pointer;
+            height: fit-content;
+            width: fit-content;
+        }
+        #button:hover {
+            background-color: #ff6fde;
+            color: white;
+        }
+        #main {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        #displayArea {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        body {
+            font-family: Verdana, sans-serif;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div id="main">
+        <div id="displayArea">
+            <h1>Let's Play Star Battle!</h1>
+        </div>
+        <div id="displayArea">
+            <canvas id="canvas" width="512" height="512"></canvas>
+        </div>
+        <div id="displayArea">
+            <button id="button">Check if Solved!</button>
+        </div>
+        
+    </div>
+
+    <!-- <div id="outputArea"></div> -->
+    
+
+    <script src="dist/client-bundle.js"></script>
+</body>
+</html>
